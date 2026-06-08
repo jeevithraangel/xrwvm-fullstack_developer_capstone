@@ -11,94 +11,63 @@ const Register = () => {
     });
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         console.log("Register Data:", formData);
-
-        alert("Registration Successful!");
     };
 
     return (
         <div className="container mt-5">
 
-            <h2 className="text-center">Register</h2>
+            <h2>User Registration</h2>
 
-            <form onSubmit={handleSubmit} className="mt-4">
+            <form onSubmit={handleSubmit}>
 
-                {/* USERNAME */}
-                <div className="form-group">
-                    <label>Username</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        name="userName"
-                        value={formData.userName}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <input
+                    type="text"
+                    name="userName"
+                    placeholder="Username"
+                    className="form-control mb-2"
+                    onChange={handleChange}
+                />
 
-                {/* FIRST NAME */}
-                <div className="form-group">
-                    <label>First Name</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    className="form-control mb-2"
+                    onChange={handleChange}
+                />
 
-                {/* LAST NAME */}
-                <div className="form-group">
-                    <label>Last Name</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    className="form-control mb-2"
+                    onChange={handleChange}
+                />
 
-                {/* EMAIL */}
-                <div className="form-group">
-                    <label>Email</label>
-                    <input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    className="form-control mb-2"
+                    onChange={handleChange}
+                />
 
-                {/* PASSWORD */}
-                <div className="form-group">
-                    <label>Password</label>
-                    <input
-                        type="password"
-                        className="form-control"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    className="form-control mb-2"
+                    onChange={handleChange}
+                />
 
-                {/* REGISTER BUTTON */}
-                <button type="submit" className="btn btn-primary btn-block mt-3">
+                <button type="submit" className="btn btn-primary">
                     Register
                 </button>
 
