@@ -1,0 +1,13 @@
+GET DEALER BY ID CURL COMMAND:
+
+curl http://127.0.0.1:8000/djangoapp/get_dealer/1
+
+OUTPUT:
+
+{
+  "dealer": {
+    "id": 1,
+    "name": "ABC Motors",
+    "state": "Kansas"
+  }
+}

@@ -1,0 +1,12 @@
+GET DEALERS BY STATE CURL COMMAND:
+
+curl http://127.0.0.1:8000/djangoapp/get_dealers/Kansas
+
+OUTPUT:
+
+{
+  "dealers": [
+    {"id": 1, "name": "ABC Motors", "state": "Kansas"},
+    {"id": 3, "name": "Speed Auto", "state": "Kansas"}
+  ]
+}

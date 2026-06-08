@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navbar spacing fix */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h4, h5 {
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Center text helper */
+.text-center {
+    text-align: center;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact and About sections spacing */
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mt-5 {
+    margin-top: 40px;
+}
+
+/* Simple card-like effect */
+.row > div {
+    padding: 15px;
+}
+
+/* Footer (optional if you add later) */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #222;
+    color: white;
+}

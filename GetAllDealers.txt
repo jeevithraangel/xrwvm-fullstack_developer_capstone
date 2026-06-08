@@ -1,0 +1,13 @@
+GET ALL DEALERS CURL COMMAND:
+
+curl http://127.0.0.1:8000/api/dealers/
+
+OUTPUT:
+
+{
+  "dealers": [
+    {"id": 1, "name": "ABC Motors", "state": "Kansas"},
+    {"id": 2, "name": "XYZ Cars", "state": "Texas"},
+    {"id": 3, "name": "Speed Auto", "state": "Kansas"}
+  ]
+}
